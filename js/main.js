@@ -1,4 +1,4 @@
-const listaTasks = document.querySelector('#lista')
+const listaTasks = document.querySelector('ul')
 const inputAddTarea = document.querySelector('#enterTask');
 const inputPrioridad = document.querySelector('#priorityInput');
 const selectPrioridad = document.querySelector('#priorityFilter');
@@ -27,6 +27,7 @@ const printOneTask = function (pTarea) {
 
     button.appendChild(contentButton);
     li.appendChild(button);
+
 
 
 

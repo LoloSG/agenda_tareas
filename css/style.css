@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 /* font-family: 'Kdam Thmor Pro', sans-serif; */
 
@@ -21,4 +22,197 @@ body {
     background: linear-gradient(to bottom, var(--colorPrincipal), var(--colorSecundario)) ;
     color: white;
     height: 100vh;
+}
+
+
+h1{
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  font-size: 125%;
+}
+
+.wrapper{
+    
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    background-image: url(../images/125199-cyberpunk-artwork-city-dark-cityscape-digital-art-futuristic.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 5px solid rgb(3, 85, 121); 
+    
+}
+
+
+/* Formulario */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+#enterTask {
+ 
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border: none;
+  background: rgba(237, 23, 215, 0.4);
+  border: 1px solid darkcyan;
+ 
+}
+
+#priorityInput{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border: none;
+  background: rgba(237, 23, 215, 0.4);
+  border: 1px solid darkcyan;
+}
+
+#priorityFilter{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border: none;
+  background: rgba(237, 23, 215, 0.4);
+  border: 1px solid darkcyan;
+}
+
+
+
+button{
+  background-color: rgb(52, 216, 11);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#btn {
+    
+    margin: 0 auto;
+    background-color: var(--colorPrincipal);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;   
+}
+
+button:hover{
+    background: radial-gradient( rgb(52, 216, 11), red );
+    transition: 0.5s;
+    width: 75%;
+    
+}
+
+.form select {
+    padding: 7px;
+    border: none;
+    margin: 5px 0;
+}
+
+.form input {
+    border: none;
+    padding: 7px;
+}
+
+
+.form button{
+    padding: 7px;
+}
+
+
+/* Tareas */
+
+.tareas .filtrado {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+.tareas .filtrado select{
+    width: 49%;
+    border: none;
+}
+
+.tareas .filtrado input{
+    width: 49%;
+    height: 30px;
+    border: none;
+
+}
+
+.tareas ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid white; 
+    height: 70px;
+    font-size: 14px;
+    
+}
+
+.listado{
+  margin: 0 auto;
+  
+  width: calc(100%-40px);
+}
+
+.listado ul{
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.listado ul li{
+    padding-left: 5px;
+    width: 100%;
+}
+
+.listado ul::-webkit-scrollbar {
+  width: 12px;               
+}
+
+.listado ul li button{
+    display: block;
+    width: 20%;
+}
+
+.diaria {
+    background-color: var(--colorSecundario);
+}
+.mensual {
+    background-color: rgb(3, 85, 121);
+}
+
+.urgente {
+    background-color: var(--colorPrincipal);
+}
+
+.arrow{
+    margin: 0 auto;
+    width: 20%;
+    height: 10%;
+    font-size: 35px;
+    color: white;
+    background-color: rgba(237, 23, 215, 0.4);
+
+    text-align: center;
+
 }
