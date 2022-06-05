@@ -12,7 +12,7 @@ const printAllTasks = function (pTareasList) {
     }
 }
 
-//cambiar en el featured de soulsctree ptasklist y ptask
+
 
 
 const printOneTask = function (pTarea) {
@@ -76,7 +76,7 @@ function saveTask(pTarea) {
 
 
 
-//-------- funciones para borrar tareas de la lista de tareas
+// Funciones para borrar tareas de la lista de tareas
 
 function deleteTask(event) {
 
@@ -93,3 +93,26 @@ function deleteTask(event) {
 
 printAllTasks(listaTareas)
 
+
+
+// Filtrado de tareas por prioridad
+
+
+
+selectPrioridad.addEventListener('change', getPriority);
+
+function getPriority(event) {
+    let priority = event.target.value;
+    if (priority != "") {
+        let listaTasksFiltrada = filterByPriority(priority, listaTareas);
+        printAllTasks(listaTasksFiltrada)
+    } else {
+        printAllTasks(listaTareas)
+    }
+}
+
+function filterByPriority(pPriority, pTareasList) {
+    const listaFiltrada = pTareasList.filter(task => task.prioridad == pPriority);
+
+    return listaFiltrada;
+}
