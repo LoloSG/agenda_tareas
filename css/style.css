@@ -1,0 +1,24 @@
+@import url(./reset.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* font-family: 'Kdam Thmor Pro', sans-serif; */
+
+
+:root{
+    --colorPrincipal: rgb(174, 8, 91);
+    --colorSecundario: lightseagreen;
+}
+
+  
+body { 
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(to bottom, var(--colorPrincipal), var(--colorSecundario)) ;
+    color: white;
+    height: 100vh;
+}
