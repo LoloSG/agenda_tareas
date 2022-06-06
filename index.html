@@ -1,15 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/datos.js"></script>
 </head>
 
 <body>
+
+    <h1>To-Do list Lo-Lo</h1>
+    <div class="wrapper">
+
+        <form class="form" action="">
+            <input type="text" id='enterTask' class="tarea" placeholder="Nueva tarea">
+            <select id="priorityInput">
+                <option value="">Selecciona prioridad</option>
+                <option value="diaria">diaria</option>
+                <option value="mensual">mensual</option>
+                <option value="urgente">urgente</option>
+            </select>
+            <input type="submit" value="Guardar" id="btn">
+        </form>
+
+        <div class="tareas">
+
+            <div class="filtrado">
+                <select id="priorityFilter">
+                    <option value="">filtrar por prioridad</option>
+                    <option value="diaria">diaria</option>
+                    <option value="mensual">mensual</option>
+                    <option value="urgente">urgente</option>
+                </select>
+
+            </div>
+
+            <div class="listado">
+                <ul>
+                    <!--<li>
+                        <button id="btn-eliminar">Eliminar</button>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+        <div class="arrow">
+            <!-- <i class="fa-solid fa-arrow-down-short-wide"></i> -->
+        </div>
+
+
+    </div>
+
+
 
 
     <script src="./js/main.js"></script>

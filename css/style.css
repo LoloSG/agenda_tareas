@@ -1,0 +1,225 @@
+@import url(./reset.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/* font-family: 'Kdam Thmor Pro', sans-serif; */
+
+
+:root{
+    --colorPrincipal: rgb(174, 8, 91);
+    --colorSecundario: lightseagreen;
+}
+
+  
+body { 
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://i.pinimg.com/originals/54/2d/bd/542dbd5a9b76db28b1354bcc98519b53.gif");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+}
+
+
+h1{
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 160%;
+  font-weight:1000;
+  text-shadow: black 0.1em 0.2em 0.2em;
+  color: rgb(172, 218, 10);
+}
+
+.wrapper{
+    
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+    background-image: url(../images/125199-cyberpunk-artwork-city-dark-cityscape-digital-art-futuristic.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 5px solid rgb(3, 85, 121); 
+    
+}
+
+
+/* Formulario */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+#enterTask {
+ 
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border: none;
+  background: rgba(237, 23, 215, 0.4);
+  border: 1px solid darkcyan;
+ 
+}
+
+#priorityInput{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border: none;
+  background: rgba(237, 23, 215, 0.4);
+  border: 1px solid darkcyan;
+}
+
+#priorityFilter{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border: none;
+  background: rgba(237, 23, 215, 0.4);
+  border: 1px solid darkcyan;
+}
+
+
+
+button{
+  background-color: rgb(172, 218, 10);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#btn {
+    
+    margin: 0 auto;
+    background-color: var(--colorPrincipal);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;   
+}
+
+button:hover{
+    background: radial-gradient( rgb(172, 218, 10), red );
+    transition: 0.5s;
+    width: 75%;
+    
+}
+
+.form select {
+    padding: 7px;
+    border: none;
+    margin: 5px 0;
+}
+
+.form input {
+    border: none;
+    padding: 7px;
+}
+
+
+.form button{
+    padding: 7px;
+}
+
+
+/* Tareas */
+
+.tareas .filtrado {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+.tareas .filtrado select{
+    width: 49%;
+    border: none;
+}
+
+.tareas .filtrado input{
+    width: 49%;
+    height: 30px;
+    border: none;
+}
+
+.listado{
+  margin: 0 auto;
+  width: calc(100%-40px);
+}
+
+.listado ul{
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  
+}
+
+.listado ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid white; 
+    padding-left: 5px;
+    width: 100%;
+    height: 70px;
+    font-size: 14px;
+    
+    
+}
+
+.listado ul::-webkit-scrollbar {
+  width: 12px;               
+}
+
+.listado ul li button{
+    display: block;
+    width: 20%;
+}
+
+.diaria {
+    background-color: var(--colorSecundario);
+}
+.mensual {
+    background-color: rgb(3, 85, 121);
+}
+
+.urgente {
+    background-color: var(--colorPrincipal);
+}
+
+.arrow{
+    margin: 0 auto;
+    /* width: 10%;
+    height: 10%; */
+    /* font-size: 35px;
+    color: white;
+    background-color: rgba(237, 23, 215, 0.4); */
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url('https://c.tenor.com/4oUnOuV6QvAAAAAd/upvote-updoot.gif');
+    background-position: center;
+    background-size: cover;
+    transform: rotateX(180deg);
+    text-align: center;
+}
