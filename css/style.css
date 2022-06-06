@@ -19,7 +19,9 @@ body {
     line-height: 1.5;
     background-size: cover;
     background-position: center;
-    background: linear-gradient(to bottom, var(--colorPrincipal), var(--colorSecundario)) ;
+    background-image: url("https://i.pinimg.com/originals/54/2d/bd/542dbd5a9b76db28b1354bcc98519b53.gif");
+    background-size: cover;
+    background-position: center;
     color: white;
     height: 100vh;
 }
@@ -28,10 +30,13 @@ body {
 h1{
   margin: 0 auto;
   margin-top: 40px;
-  width: 50%;
+  width: 100%;
   height: 50px;
   text-align: center;
-  font-size: 125%;
+  font-size: 160%;
+  font-weight:1000;
+  text-shadow: black 0.1em 0.2em 0.2em;
+  color: rgb(172, 218, 10);
 }
 
 .wrapper{
@@ -94,7 +99,7 @@ h1{
 
 
 button{
-  background-color: rgb(52, 216, 11);
+  background-color: rgb(172, 218, 10);
   border: none;
   cursor: pointer;
   color: white;
@@ -113,7 +118,7 @@ button{
 }
 
 button:hover{
-    background: radial-gradient( rgb(52, 216, 11), red );
+    background: radial-gradient( rgb(172, 218, 10), red );
     transition: 0.5s;
     width: 75%;
     
@@ -154,22 +159,10 @@ button:hover{
     width: 49%;
     height: 30px;
     border: none;
-
-}
-
-.tareas ul li{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom: 1px solid white; 
-    height: 70px;
-    font-size: 14px;
-    
 }
 
 .listado{
   margin: 0 auto;
-  
   width: calc(100%-40px);
 }
 
@@ -178,11 +171,20 @@ button:hover{
   height: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
+  
 }
 
 .listado ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid white; 
     padding-left: 5px;
     width: 100%;
+    height: 70px;
+    font-size: 14px;
+    
+    
 }
 
 .listado ul::-webkit-scrollbar {
@@ -207,12 +209,17 @@ button:hover{
 
 .arrow{
     margin: 0 auto;
-    width: 20%;
-    height: 10%;
-    font-size: 35px;
+    /* width: 10%;
+    height: 10%; */
+    /* font-size: 35px;
     color: white;
-    background-color: rgba(237, 23, 215, 0.4);
-
+    background-color: rgba(237, 23, 215, 0.4); */
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url('https://c.tenor.com/4oUnOuV6QvAAAAAd/upvote-updoot.gif');
+    background-position: center;
+    background-size: cover;
+    transform: rotateX(180deg);
     text-align: center;
-
 }
